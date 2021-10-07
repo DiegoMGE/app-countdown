@@ -22,13 +22,12 @@ function countdown() {
   hoursN.innerHTML = hours;
   minsN.innerHTML = formatTimer(mins);
   secondsN.innerHTML = formatTimer(seconds);
-  // console.log(days, hours, mins, seconds);
 }
 
+// add a 0 before a number if it is less than 10
 function formatTimer(time) {
   return time < 10 ? `0${time}` : time;
 }
-// Initial call
 countdown();
 
 setInterval(countdown, 1000);
